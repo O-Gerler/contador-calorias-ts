@@ -84,7 +84,9 @@ export default function Form({ dispatch, state }: TypeFormProps) {
             </select>
           </div>
           <div>
-            <label htmlFor="name">Actividad:</label>
+            <label htmlFor="name">
+              {activity.category === 1 ? "Comida" : "Actividad"}:
+            </label>
             <input
               type="text"
               id="name"
